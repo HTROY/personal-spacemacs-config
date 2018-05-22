@@ -43,6 +43,7 @@
   (spacemacs|disable-company org-mode)
   (setq org-export-with-sub-superscripts '{})
   (setq org-directory "~/emacs/org") ;;
+  (setq org-agenda-dir "~/emacs/org")
 
   ;; define the refile targets
   (setq org-agenda-file-note (expand-file-name "notes.org" org-agenda-dir))

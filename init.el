@@ -387,10 +387,10 @@ before packages are loaded. If you are unsure, you should try in setting them in
 											  charset
 											  (font-spec :family "Microsoft Yahei" :size 16)))
 
-						  (setq default-frame-alist '((top . 0) (left . 0) (width . 100) (height . 40)))
+						  ;;(setq default-frame-alist '((top . 0) (left . 0) (width . 80) (height . 50)))
 						  )
   ;;(add-hook 'focus-in-hook 'htroy/set-font-indeamon 'append)
-  (add-hook 'after-setting-font-hook 'htroy/set-font-indeamon 'append)
+ (add-hook 'after-setting-font-hook 'htroy/set-font-indeamon 'append)
 
 )
 
@@ -420,7 +420,7 @@ you should place your code here."
 			   (buffer-modified-p))
 	  (save-buffer))                   ;; save it first if modified.
 	(magit-stage-modified)
-	(magit-commit (list "-m" msg))
+	(magit-commit (list "-m" msg)) b
 	(magit-push-current-to-upstream nil))
 
   (setq powerline-default-separator 'arrow)
